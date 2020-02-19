@@ -1,0 +1,23 @@
+
+
+spring:  datasource:    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: null
+      jpa:    database-platform: org.hibernate.dialect.H2Dialect 
+      h2:    console:      enabled: true
+      path: /h2-console
+      settings:        trace: false
+        web-allow-others: false
+          mvc:    view:      prefix: /WEB-INF/pages/
+      suffix: .jsp
+     
+#logging:#  level:#    org.springframework: info
+#    com.nt.controller: debug
+#  file:#    name: LogApp.log
+#  pattern:#    level: info
+#    
+server:  port: 5050
+ 
+  
+      
